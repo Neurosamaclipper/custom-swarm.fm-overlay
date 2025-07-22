@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Custom Swarm.fm Overlay</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+    .background {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: url('https://your-image-url.com/bg.jpg') no-repeat center center;
+      background-size: cover;
+      z-index: 0;
+    }
+    .overlay {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      height: 120px; 
+      border: none;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="background"></div>
+  <iframe
+    class="overlay"
+    src="https://swarmfm.boopdev.com/player/details-overlay?position=bottom"
+    allowtransparency="true">
+  </iframe>
+</body>
+</html>
